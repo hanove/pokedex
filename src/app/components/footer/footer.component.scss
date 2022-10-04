@@ -1,0 +1,19 @@
+.footer {
+    align-items: center;
+    justify-content: center;
+    background-color: #ebe3e3;
+    color: rgb(22, 19, 19);
+    font-weight: 600;
+    height: 20vh;
+  }
+
+  @font-face {
+    font-family: pokefont;
+    src: url("../../../assets/fonts/PokemonSolidNormal-xyWR.ttf");
+}
+
+span{
+  font-family: pokefont;
+  color: #292825;
+  font-size: 24px;
+}

@@ -1,0 +1,14 @@
+<div class="card">
+    <mat-card (click)="onClick(pokemon)">
+        <mat-card-header>
+            <div class="poke-id">{{pokemon.id}}</div>
+            <!-- <div mat-card-avatar class="avatar-header-image">{{pokemon.id}}</div> -->
+            <mat-card-title>{{pokemon.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{pokemon.artwork}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <div class="poketype">
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

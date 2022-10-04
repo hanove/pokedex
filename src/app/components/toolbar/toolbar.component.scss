@@ -1,0 +1,18 @@
+.toolbar {
+    align-items: center;
+    justify-content: center;
+    background-color: #ef5350;
+    color: white;
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: pokefont;
+    src: url("../../../assets/fonts/PokemonSolidNormal-xyWR.ttf");
+}
+
+span{
+  font-family: pokefont;
+  color: #F9DE00;
+  font-size: 24px;
+}

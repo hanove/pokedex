@@ -1,0 +1,5 @@
+<div class="landing">
+    <div class="content" role="content" infinite-scroll (scrolled)="onScrollDown()">
+        <app-poke-card *ngFor="let pokem of pokemons" [pokemon]="pokem"></app-poke-card>
+    </div>
+</div>

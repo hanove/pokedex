@@ -1,0 +1,56 @@
+mat-card:hover {
+    box-shadow: 1px 8px 20px grey;
+    -webkit-transition: box-shadow 0s ease-in;
+    background-color: #e7e6cf;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+@font-face {
+    font-family: pokefontgb;
+    src: url("../../../assets/fonts/PokemonGb-RAeo.ttf");
+}
+
+mat-card {
+    max-width: 250px;
+    background-color: #F7F6D9;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: #394422;
+    border-style: solid;
+    border-width: 3px;
+    outline-color: #49573F;
+    outline-style: solid;
+    border-width: 3px;
+    margin: 10px 15px;
+    min-width: 250px;
+    min-height: 300px;
+    cursor: pointer;
+
+}
+
+mat-card-content {
+    // background-color: rgb(68, 68, 68);;
+}
+
+mat-card-title {
+    font-family: pokefontgb;
+    // justify-content: center;
+}
+
+mat-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.poke-id{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    background-color: #F9DE00;
+}
