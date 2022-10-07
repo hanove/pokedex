@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
+import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
     PokeCardComponent,
     ToolbarComponent,
     FooterComponent,
+    PokemonDetailsComponent,
   ],
   imports: [
     BrowserModule,

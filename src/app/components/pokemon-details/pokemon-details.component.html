@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="poke-info-container">
+        <div class="poke-img-container">
+            <img src="{{pokemon.artwork}}" alt="">
+        </div>
+        <div class="poke-name-wrapper">
+            <span class="poke-name">{{pokemon.name}}</span>
+            <!-- <span class="poke-description"> Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.</span> -->
+        </div>
+        <div class="types">
+            <div class="type-wrapper" *ngFor="let type of this.pokemon.type" [ngClass]="type.type">
+                <img alt="">
+            </div>
+        </div>
+    </div>
+    <div class="poke-carrousel-img">
+        <div class="poke-carrouser-img-item">
+            <img src="{{pokemon.spriteFront}}" alt="">
+        </div>
+    </div>
+</div>

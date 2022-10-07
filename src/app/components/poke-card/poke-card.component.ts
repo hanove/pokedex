@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Pokemon } from 'src/app/model/Pokemon';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-poke-card',
@@ -8,15 +9,19 @@ import { Pokemon } from 'src/app/model/Pokemon';
 })
 export class PokeCardComponent implements OnInit {
 
-  constructor() { }
+  router: Router;
+  constructor(router: Router, private route: ActivatedRoute) {
+    this.router = router;
+  }
 
   @Input() pokemon: any;
 
   ngOnInit(): void {
+
   }
 
-  onClick(card:Pokemon){
-    console.log(card);
+  onClick(card: Pokemon) {
+    this.router.navigate(['/poke-details/'], { queryParams: { id: this.pokemon.id } })
   }
 
 }

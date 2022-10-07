@@ -1,0 +1,55 @@
+.container{
+    background-color: #292825;
+}
+
+.poke-info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.poke-img-container{
+    order: 0;
+}
+
+@font-face {
+    font-family: pokefont;
+    src: url("../../../assets/fonts/PokemonSolidNormal-xyWR.ttf");
+}
+
+@import url("../../styles/type_styles.scss");
+
+.type-wrapper{
+    border-radius: 50px;
+    margin-top: 0.5em;
+}
+
+.types{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+
+.types img{
+    max-width: 50px;
+    padding: 1em;
+}
+
+.poke-name-wrapper{
+    display: flex;
+    order: 2;
+    flex-grow: 4;
+    justify-content: center;
+    height: fit-content;
+}
+
+.poke-name{
+    height: fit-content;
+    font-family: pokefont;
+    color: #F9DE00;
+    font-size: larger;
+}
+
+.poke-img-container img{
+    max-width: 475px;
+}
